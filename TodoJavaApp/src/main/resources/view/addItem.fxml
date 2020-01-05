@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #d32f2f #d32f2f #d32f2f #d32f2f;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.evanspendlove.todojavaappuri.controller.AddItemController">
+   <children>
+      <AnchorPane layoutY="90.0" prefHeight="310.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fx:id="addButton" fitHeight="53.0" fitWidth="60.0" layoutX="324.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../java/io/github/evanspendlove/todojavaappuri/assets/baseline_add_circle_black_48pt_3x.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="247.0" layoutY="97.0" prefHeight="47.0" prefWidth="206.0" text="No tasks for Today, yet!" textAlignment="CENTER" textFill="#6f6e6e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="221.0" layoutY="22.0" prefHeight="60.0" prefWidth="258.0" text="予定リスト" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
