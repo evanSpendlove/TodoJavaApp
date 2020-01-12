@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="90.0" prefWidth="375.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="taskLabel" layoutX="18.0" layoutY="11.0" text="Task" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" layoutX="17.0" layoutY="37.0" prefHeight="18.0" prefWidth="256.0" text="Description" textFill="#dad3d3" />
+      <Label fx:id="dateCreatedLabel" alignment="CENTER_RIGHT" layoutY="70.0" prefHeight="20.0" prefWidth="375.0" style="-fx-background-color: #ffffff;" text="Date Created " textFill="#464646" />
+      <ImageView fx:id="taskDeleteButton" fitHeight="21.0" fitWidth="26.0" layoutX="334.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/Evan/Desktop/Code/Github/Internship_Prep_2019/TodoJavaApp/TodoJavaApp/src/main/java/io/github/evanspendlove/todojavaappuri/assets/icon_deleteWhite.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="taskCompleteButton" fitHeight="21.0" fitWidth="26.0" layoutX="299.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/Evan/Desktop/Code/Github/Internship_Prep_2019/TodoJavaApp/TodoJavaApp/src/main/java/io/github/evanspendlove/todojavaappuri/assets/icon_checkTask.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

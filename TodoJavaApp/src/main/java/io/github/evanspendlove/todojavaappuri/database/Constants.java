@@ -15,6 +15,7 @@ public class Constants
     public static final String USERS_GENDER = "gender";
 
     public static final String TASKS_TASKID = "taskid";
+    public static final String TASKS_TASK = "task";
     public static final String TASKS_DATECREATED = "dateCreated";
     public static final String TASKS_DESCRIPTION = "description";
 }

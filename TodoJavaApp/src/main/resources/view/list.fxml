@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.evanspendlove.todojavaappuri.controller.ListController">
+   <children>
+      <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="221.0" layoutY="22.0" prefHeight="60.0" prefWidth="258.0" text="予定リスト" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="574.0" layoutY="45.0" prefHeight="26.0" prefWidth="75.0" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="listRefreshButton" fitHeight="33.0" fitWidth="29.0" layoutX="644.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/Users/Evan/Desktop/Code/Github/Internship_Prep_2019/TodoJavaApp/TodoJavaApp/src/main/java/io/github/evanspendlove/todojavaappuri/assets/icon_refresh.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="logoutButton" layoutX="35.0" layoutY="37.0" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #9a0007#9a0007;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="listTasks" layoutX="296.0" layoutY="97.0" prefHeight="295.0" prefWidth="395.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <AnchorPane layoutY="90.0" prefHeight="310.0" prefWidth="293.0">
+         <children>
+            <JFXTextField fx:id="listTaskField" focusColor="#ff6659" layoutX="21.0" layoutY="82.0" prefHeight="35.0" prefWidth="258.0" promptText="Task:" unFocusColor="#424242">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="listDescriptionField" focusColor="#ff6659" layoutX="21.0" layoutY="138.0" prefHeight="35.0" prefWidth="258.0" promptText="Description:" unFocusColor="#424242">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="listAddTaskButton" layoutX="78.0" layoutY="200.0" prefHeight="46.0" prefWidth="120.0" style="-fx-background-color: #d32f2f#d32f2f;" text="Add Task" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
